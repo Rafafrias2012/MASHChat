@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MashChat Login</title>
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="window" id="loginWindow">
+        <div class="title-bar">
+            <div class="title-bar-text">
+                MASHChat Login
+            </div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+
+        <div class="window-body">
+            <form id="loginForm">
+                <div class="field-row-stacked">
+                    <label for="nickname">Nickname:</label>
+                    <input type="text" id="nickname" required maxlength="20">
+                </div>
+
+                <div class="field-row-stacked">
+                    <label for="room">Room:</label>
+                    <input type="text" id="room" value="General" required>
+                </div>
+
+                <div class="field-row" style="justify-content: flex-end; margin-top: 16px;">
+                    <button type="submit" class="join-button">Join</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="status-bar">
+            <p class="status-bar-field" id="statusMessage">Ready to connect...</p>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
