@@ -1,0 +1,61 @@
+body {
+    background-color: #008080;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "MS Sans Serif", Arial, sans-serif;
+}
+
+.window {
+    width: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+}
+
+.title-bar {
+    cursor: move;
+}
+
+.title-icon {
+    width: 16px;
+    height: 16px;
+    vertical-align: text-bottom;
+    margin-right: 4px;
+}
+
+.window-body {
+    padding: 12px;
+}
+
+.field-row-stacked {
+    margin-bottom: 12px;
+}
+
+.field-row-stacked label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.field-row-stacked input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.join-button {
+    min-width: 80px;
+}
+
+.status-bar {
+    margin-top: auto;
+}
+
+.status-bar-field {
+    margin: 0;
+    padding: 2px 4px;
+}
